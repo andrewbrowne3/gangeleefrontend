@@ -1,0 +1,255 @@
+/* General Page Styles */
+.landing-page {
+  font-family: 'Poppins', sans-serif; /* Prettier font */
+  background-color: #fee8f3;
+  color: #e74499;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid black; /* Adds a black line at the bottom */
+
+  height: 100vh;
+}
+h3{
+  color: black;
+}
+p{
+  color:black;
+}
+
+/* Header */
+.header {
+  padding: 1rem 5%;
+  background-color: #ffe7f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the header */
+  border-radius: 10px;
+  border-bottom: 2px solid black; /* Adds a black line at the bottom */
+
+ 
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 50px;
+  margin-left: 3rem;
+}
+.header-title {
+  font-size: 2rem;
+  color: black;
+}
+
+.header-nav .nav-link {
+  margin: 0 1rem;
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.header-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 5% 2%;
+  background: white;
+  border-bottom: 2px solid black; /* Adds a black line at the bottom */
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the hero section */
+
+}
+
+.hero-logo {
+  height: 150px;
+  margin-bottom: 2rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: black;
+}
+
+.hero-text {
+  max-width: 60%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+/* Features Section */
+.features-section {
+  padding: 5% 10%;
+  background-color: #faadd4;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the features section */
+  margin-bottom: 2vh;
+}
+
+.features-section h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.features-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.features-section li {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  width: 30%;
+  text-align: center;
+  background: #ffffff33;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for list items */
+}
+
+.rosemary{
+  color: #e74499;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+/* Coming Soon Section */
+.coming-soon-section {
+  padding: 5% 2%;
+  background-color: #fee8f3;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for coming soon section */
+  margin-bottom: 1vh;
+}
+
+.coming-soon-section h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.coming-soon-section p {
+  max-width: 60%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: white;
+  color: #fff;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the footer */
+  border-radius: 10px;
+  border-top: 2px solid black; /* Adds a black line at the bottom */
+  
+}
+
+.footer-logo {
+  height: 30px;
+  margin-bottom: 0.5rem;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .landing-page {
+    font-size: 90%;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .header-logo {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .header-title {
+    font-size: 1.5rem;
+  }
+
+  .header-nav .nav-link {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .hero-section {
+    padding: 10% 5%;
+  }
+
+  .hero-logo {
+    height: 100px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .features-section {
+    padding: 5% 2%;
+  }
+
+  .features-section ul {
+    flex-direction: column;
+  }
+
+  .features-section li {
+    width: 100%;
+  }
+
+  .coming-soon-section {
+    padding: 5% 2%;
+  }
+
+  .coming-soon-section h3 {
+    font-size: 2rem;
+  }
+
+  .coming-soon-section p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+    padding: 2rem 1rem;
+  }
+
+  .footer-logo {
+    height: 20px;
+  }
+  
+  
+}
+
